@@ -1,11 +1,12 @@
 -- Creating table schema
--- Drop all tables
-DROP TABLE departments;
-DROP TABLE titles;
-DROP TABLE employees;
-DROP TABLE dept_managers;
-DROP TABLE dept_emp;
+-- Drop tables to eliminate errors
+-- Ordered this way to make sure no dependencies
 DROP TABLE salaries;
+DROP TABLE dept_emp;
+DROP TABLE dept_managers;
+DROP TABLE departments;
+DROP TABLE employees;
+DROP TABLE titles;
 
 -- Create table departments
 CREATE TABLE departments (
