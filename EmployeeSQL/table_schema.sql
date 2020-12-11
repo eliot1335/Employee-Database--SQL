@@ -3,7 +3,7 @@
 -- Ordered this way to make sure no dependencies
 DROP TABLE salaries;
 DROP TABLE dept_emp;
-DROP TABLE dept_managers;
+DROP TABLE dept_manager;
 DROP TABLE departments;
 DROP TABLE employees;
 DROP TABLE titles;
@@ -44,15 +44,15 @@ CREATE TABLE employees (
 SELECT * FROM employees;
 
 
--- Create table dept_managers
-CREATE TABLE dept_managers (
+-- Create table dept_manager
+CREATE TABLE dept_manager (
 	dept_no VARCHAR (10),
 	emp_no INT,
 	FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
 
-SELECT * FROM dept_managers;
+SELECT * FROM dept_manager;
 
 
 --Create table dept_emp
